@@ -39,7 +39,7 @@ exports.getWeather = function(req, res) {
 };
 router.get('/getWeather', exports.getWeather);
 
-
+/* RECOMMENTED because of error with line 116 in apiv1.spec.js
 exports.getWeather2 = function(req, res) {
 	var zip = req.query.zip;
 	if( (zip === null) || (typeof(zip) === 'undefined') ) {
@@ -69,7 +69,7 @@ exports.getWeather2 = function(req, res) {
 
 };
 router.get('/getWeather2', exports.getWeather2);
-
+*/
 exports.getWeather3 = function(req, res) {
 	var zip = req.query.zip;
 	if( (zip === null) || (typeof(zip) === 'undefined') ) {
