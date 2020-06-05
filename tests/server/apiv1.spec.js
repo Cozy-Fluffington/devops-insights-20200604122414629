@@ -22,7 +22,7 @@ sinon.spy(resMock, "send");
 
 
 describe('Get Weather', function() {
-
+// policies, change unit test
   it('with without zip code', function() {
     reqMock = {
       query: {
