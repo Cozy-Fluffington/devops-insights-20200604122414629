@@ -8,7 +8,7 @@ function Zip(props) {
         const zipCodePattern = /^[\sa-zA-Z]+$/;
         const valid = zipCodePattern.test(event.target.value);
         if (!valid) {
-            setValidationError('* should be a 5 digit number only');
+            setValidationError('* should be only letters');
             props.clearResponse();
         } else {
             setValidationError('');
@@ -30,7 +30,7 @@ function Zip(props) {
                         type="text" 
                         className="form-control" 
                         id="usr" 
-                        placeholder="US Zip Code (5 digit)"	//aaaa
+                        placeholder="NZ city name (e.g. Wellington)"	//aaaa
                         onKeyPress={(event) => {
                             if (event.key === "Enter") {
                                 validate(event);
